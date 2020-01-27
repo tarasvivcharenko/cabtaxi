@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/hero_taxi.ico">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CabTaxi</title>
+</head>
+<body>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4 header_logo">
+                <div class="logo_name">Cab<span class="other_color">HUB</span></div>
+                <div class="logo_subscribe">Call and Relex</div>
+            </div>
+            <div class="col-sm-2 col-2 button_modal">
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#menu_modal"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="modal" id="menu_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content container">
+                        <div class="row justify-content-end">
+                            <div class="col-auto col-xl-auto button_close">
+                                <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="item_menu"><a class="item_link" href="#about">about</a></div>
+                        <div class="item_menu"><a class="item_link" href="#price">price</a></div>
+                        <div class="item_menu"><a class="item_link" href="#features">features</a></div>
+                        <div class="item_menu"><a class="item_link" href="#blog">blog</a></div>
+                        <div class="item_menu"><a class="item_link" href="#order">download app</a></div>
+                        <div class="item_menu"><a class="item_link" href="#contacts">contacts</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row justify-content-end align-items-center header_menu">
+                    <div class="item_menu"><a href="#about" class="item_link">about</a></div>
+                    <div class="item_menu"><a href="#price" class="item_link">price</a></div>
+                    <div class="item_menu"><a href="#features" class="item_link">features</a></div>
+                    <div class="item_menu"><a href="#blog" class="item_link">blog</a></div>
+                    <div class="item_menu"><a href="#order" class="item_link">download app</a></div>
+                    <div class="item_menu"><a href="#contacts" class="item_link">contacts</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h1 class="hero_number">+157-235-4562</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h4 class="hero_suite">www.cabhub.com</h4>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="hero_image"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="aboutUs" id="about">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-11 left_block">
+                <div class="row">
+                    <div class="aboutUs_title">best in city</div>
+                </div>
+                <div class="row">
+                    <div class="aboutUs_title1">trusted cab services in new york</div>
+                </div>
+                <div class="row text-justify">
+                    <div class="aboutUs_description">New York is a city of contrasts, where modern buildings are bordered by cozy villas, with motion vectors lining the incredibly beautiful streets of the ancient city center, and the lighthouse being the spire of the Town Hall. The city is leisurely and driven at the same time, good for guests and residents, ready to receive and open, to lead and to be amazed. That's why a taxi in New York is an essential service for locals and tourists alike!
+                        KabHab is the perfect assistant for all kinds of transportation!</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-0 aboutUs_button">
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-11 col-sm-11 col-11">
+                <div class="aboutUs_form">
+                    <div class="form_title">Book a <span class="other_color">Cab</span></div>
+                    <form class="form_input" id="form_input">
+                        <input type="text" name="name" class="input_text" placeholder="Name">
+                        <input type="text" name="phone" class="input_text" placeholder="Phone">
+                        <input type="text" name="day" class="input_text" placeholder="When">
+                        <input type="text" name="time" class="input_text" placeholder="Time">
+                        <input type="text" name="address" class="input_text" placeholder="Start">
+                        <input type="text" name="address" class="input_text" placeholder="End">
+                        <input type="text" name="auto" class="input_text vehicle" placeholder="Choose Vehicle">
+                        <input type="submit" class="input_button" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="price" id="price">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_title">Our</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_title1">Tariffs</div>
+        </div>
+        <div class="row slider-content">
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 price_block content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_name">economy class</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_description">It is an economy class taxi that will allow you to get to any corner of the capital cheaply, quickly and comfortably. If you give preference to this tariff, you will be presented with a new Renault Logan car.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_traffics">$1/mi</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_button">
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 price_block content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_name">standard class</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_description">CabHUB taxi fleet consists of exclusive MERCEDES cars very clean and in excellent condition to enjoy a comfortable and safe trip to any destination that you will choose on Crete.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_traffics">$1,5/mi</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_button">
+                        <button>read more</button>
+                    </div>
+                    <div class="price_best">
+                        <div class="icon_star"><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 price_block content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_name">business class</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_description">CabHub for those booking a business class transfer, you can typically expect a Mercedes E-class or newer, BMW 5 Series. All vehicles are kept in top condition, so they look and feel pristine.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_traffics">$3/mi</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_button">
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 price_block content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_name">cargo class</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_description">If you need to carry large cargo, then to us. Cargo Class is a great Renault Traffic that can easily transport all your furniture. And so that they are not damaged, our driver will help bring them to the car.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_traffics">$5/mi</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_button">
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 price_block content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_name">luxury</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_description">If you are going to a party or an elegant evening, you need an elegant car, then this class for you, choosing this class will come with an elegant limo with an experienced driver who will deliver you to the party.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_traffics">$10/mi</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 price_button">
+                        <button>read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features" id="features">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 features_title">We Do Best</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 features_description">Than You Wish</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-6 col-sm-10 col-10 features_block">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center block_icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9 block_text">
+                        <div class="title_column">home pickup</div>
+                        <div class="description_column">It's easy and convenient to call a taxi home for the specific
+                            hour you need
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-10 col-10 features_block">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center block_icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9 block_text">
+                        <div class="title_column">fast booking</div>
+                        <div class="description_column">Quickly booking your car to your liking through our site or app
+                            on your smartphone
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-6 col-sm-10 col-10 features_block">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3 col-3 text-center block_icon">
+                        <i class="fab fa-fort-awesome"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9 block_text">
+                        <div class="title_column">bonuses for ride</div>
+                        <div class="description_column">Rides with us comfortably, and get travel bonuses, and pay for
+                            the following bonuses trains
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-10 col-10 features_block">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3 col-3 text-center block_icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9 block_text">
+                        <div class="title_column">gps searching</div>
+                        <div class="description_column">Track the car on the map you ordered, or you can see which cars,
+                            are nearby for you to order
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 features_button">
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="downloadApp" id="order">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 download_title">Download</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 download_description">Best Cab Services</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 left_block">
+                <div class="title_block">Download the Cab voucher app free! Get Exciting New Offers</div>
+                <div class="description_block text-justify">Use the new and handy app that will allow you to quickly and conveniently book our taxi and track the car you called. Download on your smartphone.</div>
+                <div class="row justify-content-around">
+                    <a href="https://play.google.com/store" target="_blank" class="col-lg-5 col-md-5 col-sm-5 col-5">
+                        <div class="google_app"></div>
+                    </a>
+                    <a href="https://www.apple.com/ios/app-store/" target="_blank" class="col-lg-5 col-md-5 col-sm-5 col-5">
+                        <div class="apple_app"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-10 col-10">
+                <div class="right_block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 blog_title">Happy Client's</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 blog_title1">Testimonials</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 comment">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-justify user_comment">I have used the services of this taxi service many times, everything suits me:
+                        the cost of services, convenient cars. Recommend to everyone!!!
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 px-0 user_icon"></div>
+                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 user_name">John Doe</div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-10 col-10 comment">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-justify user_comment">Very often I come to New York for work. I always order business class cars, high quality comfort and great price. I recommend business class
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 user_icon"></div>
+                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 user_name">Nicolas Macdonald</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 info_title">We are Ready to Take Your Call 24 Hours, 7 Days!</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 info_phone">+157-235-4562</div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 footer_block">
+                <div class="row">
+                    <div class="block_title">About cab Hub</div>
+                </div>
+                <div class="row">
+                    <div class="block_description">CabHUB is a reliable and comfortable taxi service that will take you anywhere in our city. We always try to improve our service so that you are satisfied.</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-7 col-sm-6 col-6 block_social">
+                        <div class="row justify-content-between">
+                            <a href="https://www.facebook.com/" target="_blank" class="social_link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://aboutme.google.com/" target="_blank" class="social_link"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="social_link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social_link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 footer_block">
+                <div class="row">
+                    <div class="block_title">Download</div>
+                </div>
+                <div class="row">
+                    <div class="block_description">Just download and enjoy the ease of use</div>
+                </div>
+                <div class="row user_app justify-content-between">
+                    <div class="block_app">Android User</div>
+                    <div class="app_icon"><i class="fab fa-android"></i></div>
+                </div>
+                <div class="row user_app justify-content-between">
+                    <div class="block_app">IOS Users</div>
+                    <div class="app_icon"><i class="fab fa-apple"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-10 footer_block">
+                <div class="row">
+                    <div class="block_title">Contact</div>
+                </div>
+                <div class="contacts_info">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 icon_address"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10 pr-0 block_address">52, Main Street, New York, USA 10312</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 icon_phone"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10 block_phone">+157-235-4562</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 icon_email"><i class="fas fa-envelope"></i></div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10 block_email">clients@cabhub.com</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 icon_suite"><i class="fas fa-mouse-pointer"></i></div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10 block_suite"><a href="www.cabhub.com" target="_blank">www.cabhub.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 footer_copy">Copyright © 2020 CabHUB</div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".item_link").click(function () {
+      $("#menu_modal").modal('hide');
+      let id = $(this).attr('href');
+      let top = $(id).offset().top;
+      $('body,html').animate({ scrollTop: top }, 1000);
+    });
+  });
+</script>
+</body>
+</html>
